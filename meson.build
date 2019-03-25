@@ -16,7 +16,7 @@ headers = files([
 
 mpack = library('mpack', src, install : true)
 
-mpack_dep = declare_dependency(link_with : mpack, include_directories : incdir)
+ludocode_mpack_dep = declare_dependency(link_with : mpack, include_directories : incdir)
 
 install_headers(headers)
 
